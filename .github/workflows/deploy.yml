@@ -23,11 +23,11 @@ jobs:
 
       - name: Installer les dépendances
         run: npm install
-        working-directory: ./GustoVoyage
+
 
       - name: Compiler le projet
         run: npm run build
-        working-directory: ./GustoVoyage
+       
 
       - name: Préparer les fichiers pour Pages
         uses: actions/upload-pages-artifact@v3
