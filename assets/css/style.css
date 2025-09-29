@@ -883,7 +883,7 @@ section h1 {
   font-style: normal;
 }
 
-span {
+.span_atelier {
   border-radius: 100px;
   background-color: #FFC529;
   padding: 11px;
@@ -1180,7 +1180,6 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
   border-radius: 6px;
   margin-bottom: 15px;
   font-size: 1.4em;
-  text-align: center;
 }
 
 .right-section p {
