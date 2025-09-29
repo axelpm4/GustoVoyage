@@ -1,33 +1,149 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <base href="/GustoVoyage/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>    
-    <link rel="stylesheet" href="assets/css/style.css">    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GustoVoyage</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/logoarrondi.webp">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 </head>
-<body>
- 
-<div class="galerie-grid__galerie">
-  <!-- FRANCE -->
-  <img src="assets/images galerie/PARIS/drapeau1.jpg" alt="Tour Eiffel" class="img-small__galerie">
-  <img src="assets/images galerie/PARIS/toureffeil.jpg" alt="Louvre" class="img-medium__galerie">
-  <img src="assets/images galerie/PARIS/musée.jpg" alt="Provence" class="img-large__galerie">
-  <img src="assets/images galerie/PARIS/photo4.jpg" alt="Provence" class="img-small__galerie">
-  <img src="assets/images galerie/AFRIQUE/beignet06.jpg" alt="Mont Saint-Michel" class="img-medium__galerie">
-  <img src="assets/images galerie/AFRIQUE/dames06.jpg" alt="Côte d'Azur" class="img-large__galerie">
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="assets/img/logoarrondi.webp" alt="GustoVoyage">
+  </div>
 
-  <!-- ETATS-UNIS -->
-  <img src="assets/images galerie/USA/1.avif" alt="New York" class="img-medium__galerie">
-  <img src="assets/images galerie/USA/2.avif" alt="Grand Canyon" class="img-large__galerie">
-  <img src="assets/images galerie/USA/3.avif" alt="San Francisco" class="img-small__galerie">
-  <img src="assets/images galerie/USA/4.avif" alt="Los Angeles" class="img-medium__galerie">
-  <img src="assets/images galerie/USA/5.avif" alt="Las Vegas" class="img-small__galerie">
-  <img src="assets/images galerie/USA/6.avif" alt="Miami" class="img-large__galerie">
+  <!-- menu desktop -->
+  <nav class="nav-desktop">
+    <a href="index.html">Accueil</a>
+    <a href="pages/destinations.html">Destination</a>
+    <a href="pages/offresspeciale.html">Offres spéciales</a>
+    <a href="pages/atelierscuisine.html">Ateliers cuisine</a>
+    <a href="pages/galerie.html">Galerie photo</a>
+  </nav>
+  <!-- menu burger (mobile) -->
+  <div class="hamburger" id="hamburger">☰</div>
 
-  <!-- Ajouter toutes les autres images de tes pays ici -->
-</div>
+  <!-- menu overlay (mobile) -->
+  <nav id="nav-menu">
+    <div class="close-btn" id="close-btn">✖</div>
+    <a href="index.html">Accueil</a>
+    <a href="pages/destinations.html">Destination</a>
+    <a href="pages/offresspeciale.html">Offres spéciales</a>
+    <a href="pages/atelierscuisine.html">Ateliers cuisine</a>
+    <a href="pages/galerie.html">Galerie photo</a>
+    <a href="pages/contact.html">Contact</a>
+  </nav>
+</header>
 
-</body>
-</html>
+  <!-- ===== INTRO ===== -->
+
+  <section class="intro-text">
+    <h1>Bienvenue sur la Galerie Photo</h1>
+  </section>
+
+  <!-- ===== MOSAÏQUE FLEX ===== -->
+  <section class="mosaic">
+    <!-- PARIS -->
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/PARIS/musée.jpg" alt="musée de Paris" class="horizontal" width="808px">
+  </div>
+    <img src="assets/images_galerie/PARIS/paris.jpg" alt="Vue de Paris" class="vertical" width="" >
+    <img src="assets/images_galerie/PARIS/croissant.jpg" alt="Croissant parisien" class="vertical" width="">
+    <img src="assets/images_galerie/PARIS/metro.jpg" alt="Métro parisien" class="vertical">
+  </div>
+  
+  
+
+    <!-- ITALIE -->
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/ITALIE/fontaine.jpg" alt="Fontaine en Italie" class="horizontal"width="808px">
+  </div>
+    <img src="assets/images_galerie/ITALIE/drapeauitalie.jpg" alt="Drapeau italien" class="vertical">
+    <img src="assets/images_galerie/ITALIE/pizza.jpg" alt="Pizza italienne" class="vertical">
+    <img src="assets/images_galerie/ITALIE/gondole.jpg" alt="Gondole de Venise" class="vertical">
+  </div>
+<!-- PEROU -->
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/PEROU/photo10.jpg" alt="Montagnes du Pérou" class="vertical" width="808px">
+    <img src="assets/images_galerie/PEROU/p2.jpg" alt="Paysage du Pérou" class="vertical">
+    <img src="assets/images_galerie/PEROU/paysage.jpg" alt="Vue panoramique du Pérou" class="vertical">
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/PEROU/silencio.jpg" alt="couloir orange" class="horizontal" width="810px">
+  </div>
+<!-- JAPON -->
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/JAP/j1.jpg" alt="Temple japonais" class="horizontal" width="808px">
+  </div>
+    <img src="assets/images_galerie/JAP/carte3.jpg" alt="Carte du Japon" class="vertical">
+    <img src="assets/images_galerie/JAP/nouille.jpg" alt="Bol de nouilles japonaises" class="vertical">
+    <img src="assets/images_galerie/JAP/sushis.jpg" alt="Assortiment de sushis" class="vertical">
+  </div>
+
+    <!-- THAÏLANDE -->
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/THAILAND/drapeau05.jpg" alt="Drapeau de Thaïlande" class="horizontal"width="810px">
+  </div>
+    <img src="assets/images_galerie/THAILAND/t3.jpg" alt="Paysage de Thaïlande" class="vertical">
+    <img src="assets/images_galerie/THAILAND/platthailandais.jpg" class="vertical">
+    <img src="assets/images_galerie/THAILAND/ocean.jpg" class="vertical">
+
+
+    <!-- AFRIQUE -->
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/AFRIQUE/drapeauafrique.jpg" alt="Drapeau africain" class="horizontal"width="810px">
+  </div>
+    <img src="assets/images_galerie/AFRIQUE/beignet06.jpg" alt="Beignets africains" class="vertical">
+    <img src="assets/images_galerie/AFRIQUE/new4.jpg" alt="Scène africaine" class="vertical">
+    <img src="assets/images_galerie/AFRIQUE/plage06.jpg" alt="Plage d’Afrique" class="vertical">
+  
+
+    <!-- MAROC -->
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/MAROC/m2.jpg" alt="Monument marocain" class="horizontal"width="810px">
+  </div>
+    <img src="assets/images_galerie/MAROC/m5.jpg" alt="Paysage marocain" class="vertical">
+    <img src="assets/images_galerie/MAROC/thé.jpg" alt="Thé à la menthe marocain" class="vertical">
+    <img src="assets/images_galerie/MAROC/m4.jpg" alt="Architecture marocaine" class="vertical">
+  </div>
+
+    <!-- AUSTRALIE -->
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/AUSTRALIE/carte07.jpg" alt="Carte de l'Australie" class="vertical">
+    <img src="assets/images_galerie/AUSTRALIE/kangourou.jpg" alt="Kangourou australien" class="vertical">
+  
+    <img src="assets/images_galerie/AUSTRALIE/pickup.jpg" alt="Pickup en Australie" class="vertical">
+  </div>
+    <!-- NEZ ZELAND -->
+  <div class="mosaic-container">
+    <img src="assets/images_galerie/NEWZEALAND/n1.jpg" alt="" class="horizontal" width="810px">
+  </div>
+    <img src="assets/images_galerie/NEWZEALAND/n2.jpg" alt="" class="vertical">
+    <img src="assets/images_galerie/NEWZEALAND/n4.jpg" alt="" class="vertical">
+    <img src="assets/images_galerie/NEWZEALAND/n5.jpg" alt="" class="vertical">
+  </div>
+  <!-- Footer -->
+  <footer>
+  <div class="footer-nav">
+    <!-- Liens -->
+    <div class="footer-links">
+      <a href="index">Accueil</a>
+      <a href="pages/destinations.html">Destination</a>
+      <a href="pages/offresspeciale.html">Offres spéciales</a>
+      <a href="pages/atelierscuisine.html">Ateliers cuisine</a>
+      <a href="pages/galerie.html">Galerie photo</a>
+    </div>
+
+    <!-- Recherche -->
+    <div class="footer-search">
+      <input type="text" placeholder="search...">
+      <button>🔍</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Privacy Policy | Terms of Use | Sales and Refunds | Legal</p>
+  </div>
+</footer>
